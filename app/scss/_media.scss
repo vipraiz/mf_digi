@@ -1,0 +1,56 @@
+@media (min-width: 640px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .header__inner {
+    min-height: 100px;
+  }
+
+  .head {
+    min-height: 386px;
+  }
+
+  .top-slider {
+    &__item {
+      min-height: 386px;
+    }
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+      padding: 50px 0 15px;
+      margin: 0 auto 30px;
+      max-width: 520px;
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto 113px;
+    font-size: 18px;
+    line-height: 18px;
+    background-color: $main-color;
+    color: $bg-color;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+}
