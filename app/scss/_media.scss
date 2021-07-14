@@ -418,6 +418,28 @@
       margin-bottom: 56px;
     }
   }
+
+  .quotes {
+    padding-top: 114px;
+
+    &-slider {
+      &__item {
+        padding: 50px 0;
+      }
+
+      &__text {
+        font-size: 32px;
+        line-height: 34px;
+        margin: 0 35px 40px;
+      }
+
+      &__author {
+        margin: 0 35px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -442,7 +464,7 @@
     }
 
     &__item-link {
-      padding: 30px 0;
+      margin: 30px 0;
     }
   }
 
@@ -480,6 +502,18 @@
     &__btn {
       font-size: 18px;
       line-height: 18px;
+    }
+  }
+
+  .quotes {
+    &-slider {
+      &__text {
+        margin: 0 42px;
+      }
+
+      &__author {
+        margin: 0 42px;
+      }
     }
   }
 }
@@ -523,6 +557,25 @@
       line-height: 18px;
     }
   }
+
+  .quotes {
+    padding: 158px 0 80px;
+
+    &-slider {
+      &__item {
+        padding-bottom: 90px;
+      }
+
+      &__text {
+        line-height: 37px;
+        margin: 0 120px 45px;
+      }
+
+      &__author {
+        margin: 0 120px;
+      }
+    }
+  }
 }
 
 @media (min-width: 1440px) {
@@ -564,6 +617,24 @@
     &__text {
       margin-bottom: 39px;
       max-width: 584px;
+    }
+  }
+
+  .quotes {
+    padding-top: 168px;
+
+    &-slider {
+      &__text {
+        font-size: 36px;
+        line-height: 42px;
+        margin: 0 285px 30px;
+      }
+
+      &__author {
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0 120px;
+      }
     }
   }
 }

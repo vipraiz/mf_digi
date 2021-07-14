@@ -50,6 +50,10 @@
   text-align: center;
   min-height: 193px;
 
+  &__item {
+    min-height: 193px;
+  }
+
   &__title {
     @extend %robotoCondensed-400;
     font-size: 28px;
@@ -86,6 +90,8 @@
     justify-content: center;
     position: absolute;
     bottom: 20px;
+    margin: 0 auto;
+    width: 50px;
     left: 0;
     right: 0;
 
@@ -207,6 +213,7 @@
 
   &__item-inner {
     transition: all 0.2s;
+    position: relative;
   }
 
   &__item-img {
@@ -238,6 +245,10 @@
 
   &__item-link {
     @extend %robotoCondensed-700;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 2px;
@@ -295,7 +306,7 @@
     @extend %robotoCondensed-700;
     color: $main-color;
     display: block;
-    padding: 20px 0;
+    margin: 20px 0;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 2px;
@@ -330,6 +341,99 @@
     text-transform: uppercase;
     padding: 21px 26px;
     color: $bg-color;
+  }
+}
+
+/////////////// Masonry Grid не осилил
+.lastnews {
+  padding: 40px 0;
+  text-align: center;
+  color: $text-color;
+  background-color: $bg-color;
+}
+
+///////////////
+
+.quotes {
+  padding: 130px 0 40px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    height: 36px;
+    width: 36px;
+    margin: 0 auto;
+    background-image: url(/img/quote.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &-slider {
+    text-align: center;
+    color: $text-color;
+
+    &__item {
+      padding: 40px 0;
+    }
+
+    &__text {
+      @extend %robotoCondensed-400;
+      font-size: 24px;
+      line-height: 26px;
+      margin: 0 20px;
+      padding-bottom: 20px;
+
+      span {
+        @extend %robotoCondensed-700;
+        color: $main-color;
+      }
+    }
+
+    &__author {
+      @extend %robotoCondensed-700;
+      margin: 0 20px;
+      letter-spacing: 2px;
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 50px;
+
+      li + li {
+        margin-left: 10px;
+      }
+
+      button {
+        font-size: 0;
+        bottom: none;
+        background-color: $main-color;
+        padding: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        transition: 0.4s;
+      }
+
+      .slick-active {
+        button {
+          background-color: transparent;
+          border: 1px solid #476e4d;
+        }
+      }
+    }
   }
 }
 
