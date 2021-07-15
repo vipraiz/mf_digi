@@ -149,6 +149,11 @@
     border-radius: 3px;
     border: none;
     text-transform: uppercase;
+    transform: 0.2s;
+
+    &:hover {
+      background-color: $hover-color2;
+    }
   }
 }
 
@@ -254,6 +259,11 @@
     letter-spacing: 2px;
     color: $main-color;
     text-transform: uppercase;
+    transition: 0.2s;
+
+    &:hover {
+      color: $hover-color1;
+    }
   }
 }
 
@@ -310,6 +320,11 @@
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 2px;
+    transition: 0.2s;
+
+    &:hover {
+      color: $hover-color1;
+    }
   }
 }
 
@@ -341,6 +356,11 @@
     text-transform: uppercase;
     padding: 21px 26px;
     color: $bg-color;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: $hover-color1;
+    }
   }
 }
 
@@ -364,10 +384,10 @@
     top: 50px;
     left: 0;
     right: 0;
-    height: 36px;
-    width: 36px;
+    width: 34px;
+    height: 29px;
     margin: 0 auto;
-    background-image: url(/img/quote.png);
+    background-image: url(/img/quote.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -434,6 +454,182 @@
         }
       }
     }
+  }
+}
+
+.footer {
+  background-color: $main-color;
+  margin-top: 45px;
+  color: #fff;
+  position: relative;
+  text-align: center;
+
+  // .footer__logo
+
+  &__head {
+    background-color: $main-color;
+    padding: 0 75px 5px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    width: 83px;
+    height: 55px;
+    margin: 0 auto;
+    border-radius: 3px;
+  }
+
+  &__logo-link {
+    position: absolute;
+    width: 83px;
+    height: 55px;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    img {
+      width: 83px;
+      height: 55px;
+    }
+  }
+
+  // .footer__text
+
+  &__text {
+    @extend %roboto-400;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    padding: 85px 0 43px;
+  }
+
+  // .footer__social
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  // .footer__social-link
+
+  &__social-link {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 30px;
+  }
+
+  // .footer__items
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+  }
+
+  // .footer__item
+
+  &__item {
+    padding-bottom: 35px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  // .footer__item-title
+
+  &__item-title {
+    @extend %robotoCondensed-700;
+    text-transform: uppercase;
+    color: $bg-color;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    padding-bottom: 12px;
+  }
+
+  // .footer__item-link
+
+  &__item-link {
+    display: block;
+    margin: 6px 0;
+    transition: 0.2s;
+
+    &:hover {
+      color: #d7d1ff;
+    }
+
+    &_adress {
+      max-width: 165px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.copyright {
+  background: $bg-color;
+  position: relative;
+
+  &__inner {
+    min-height: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link a {
+    @extend %robotoCondensed-400;
+    color: $text-color;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-image: url(/img/up-arrow.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      pointer-events: none;
+      position: absolute;
+      bottom: -45px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 21px;
+      height: 21px;
+      animation: up-down 1.5s infinite;
+      animation-timing-function: linear;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -45px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 21px;
+      height: 21px;
+    }
+  }
+}
+
+@keyframes up-down {
+  0% {
+    margin-top: 2.5px;
+    opacity: 1;
+  }
+  50% {
+    margin-top: -5px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 2.5px;
   }
 }
 

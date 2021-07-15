@@ -1,6 +1,8 @@
 $main-color: #2b4074;
+$hover-color1: #354d8b;
 $text-color: #4a4a4a;
 $bg-color: #f9f6e5;
+$hover-color2: #fff;
 $default-color: #9b9b9b;
 
 %dosis-300 {
@@ -16,6 +18,11 @@ $default-color: #9b9b9b;
 %roboto-500 {
   font-family: 'Roboto-Medium';
   font-weight: 500;
+}
+
+%roboto-400 {
+  font-family: 'Roboto-Regular';
+  font-weight: 400;
 }
 
 %robotoCondensed-400 {
