@@ -556,10 +556,13 @@
   &__item-link {
     display: block;
     margin: 6px 0;
-    transition: 0.2s;
 
-    &:hover {
-      color: #d7d1ff;
+    a {
+      transition: 0.2s;
+
+      &:hover {
+        color: #d7d1ff;
+      }
     }
 
     &_adress {
