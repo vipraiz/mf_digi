@@ -59,6 +59,7 @@ body {
 
 .title {
   @extend %robotoCondensed-400;
+  user-select: none;
   font-size: 24px;
   line-height: 28px;
   padding-bottom: 28px;

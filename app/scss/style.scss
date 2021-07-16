@@ -543,6 +543,7 @@
 
   &__item-title {
     @extend %robotoCondensed-700;
+    user-select: none;
     text-transform: uppercase;
     color: $bg-color;
     font-size: 18px;
